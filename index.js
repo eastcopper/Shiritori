@@ -1,10 +1,8 @@
-const word = document.getElementById('word');
-let i = 0;
-let arr = [];
+const answer = document.getElementById('answer');
+let word = "호랑이";
 function printName () {
-    
-        arr[i] = word.value;
-        console.log(arr[i]);
-        i++
-        word.value='';
+        if (word[word.length - 1] == answer.value[0]) {
+                alert('asdf');
+        }
+        answer.value='';
 }
