@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영어 끝말잇기</title>
+    <link rel="stylesheet" href="./English_end_to_end.css">
+</head>
+
+<body>
+    <h1 id="title">영어 끝말잇기</h1>
+    <div id="number"></div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="result"></div>
+            <p><button id="restart">다시시작</button></p>
+        </div>
+    </div>
+    <main>
+        <div id="word"></div>
+        <input id="answer" type="text" value="" onchange="printName();">
+        <div id="timer"></div>
+    </main>
+    
+    <script src="./English_end_to_end.js"></script>
+</body>
+
+</html>
