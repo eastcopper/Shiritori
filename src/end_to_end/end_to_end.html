@@ -6,16 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>끝말잇기</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./end_to_end.css">
 </head>
 
 <body>
+    <h1 id="title">끝말잇기</h1>
     <div id="number"></div>
-    <main>
-        <div id="word"></div>
-        <input id="answer" type="text" value="" onchange="printName();">
-        <div id="timer"></div>
-    </main>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -23,7 +19,13 @@
             <p><button id="restart">다시시작</button></p>
         </div>
     </div>
-    <script src="./index.js"></script>
+    <main>
+        <div id="word"></div>
+        <input id="answer" type="text" value="" onchange="printName();">
+        <div id="timer"></div>
+    </main>
+    
+    <script src="./end_to_end.js"></script>
 </body>
 
 </html>
