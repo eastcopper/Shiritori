@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,15 @@
     <title>끝말잇기</title>
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <div id="word">호랑이</div> 
     <div id="number"></div>
-    <input id="answer" type="text" onchange="printName ()">
-    <div id="timer"></div>
+    <main>
+        <div id="word"></div>
+        <input id="answer" type="text" value="" onchange="printName();">
+        <div id="timer"></div>
+    </main>
     <script src="./index.js"></script>
 </body>
+
 </html>
