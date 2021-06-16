@@ -23,7 +23,6 @@ function printName() {
     const word = document.getElementById('word').textContent;
     const answer = document.getElementById('answer').value;
     let lastIndex = word.length - 1;
-    console.log("a".charCodeAt(0));
     let consonant = (answer[answer.length - 1].charCodeAt(0) < 12593 || answer[answer.length - 1].charCodeAt(0) > 12643);
     let smallLetter = (answer[answer.length - 1].charCodeAt(0) < 97 || answer[answer.length - 1].charCodeAt(0) > 122);
     let capitalLetter = (answer[answer.length - 1].charCodeAt(0) < 65 || answer[answer.length - 1].charCodeAt(0) > 90);
