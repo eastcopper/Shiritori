@@ -20,8 +20,9 @@ function printName () {
     const word = document.getElementById('word').textContent;
     const answer = document.getElementById('answer').value;
     let lastIndex = word.length - 1;
+    console.log("ㅢ".charCodeAt(0));
     number.innerHTML = `${num}번 하였습니다.`;
-    if (word[lastIndex] === answer[0] && answer.length > 1 && answer[answer.length - 1].charCodeAt(0) < 12593 || answer[answer.length - 1].charCodeAt(0) > 12622) {
+    if (word[lastIndex] === answer[0] && answer.length > 1 && answer[answer.length - 1].charCodeAt(0) < 12593 || answer[answer.length - 1].charCodeAt(0) > 12643) {
         const name = document.getElementById('answer').value;
         document.getElementById("word").innerText = name;
         num++;
