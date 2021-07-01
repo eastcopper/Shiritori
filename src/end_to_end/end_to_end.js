@@ -20,14 +20,20 @@ Array.prototype.shuffle = function () {
     return this;
 }; // 제시어 랜덤
 files.shuffle();
+function check(num,answer){
+    return answer[answer.length - 1].charCodeAt(0) < num;
+}
+function check2(num,answer) {
+    return answer[answer.length - 1].charCodeAt(0) > num; 
+}
 function printName() {
     const word = document.getElementById('word').textContent;
     const answer = document.getElementById('answer').value;
     let lastIndex = word.length - 1;
-    let num = (answer[answer.length - 1].charCodeAt(0)  < 48 || answer[answer.length - 1].charCodeAt(0) > 57);
-    let consonant = (answer[answer.length - 1].charCodeAt(0) < 12593 || answer[answer.length - 1].charCodeAt(0) > 12643);
-    let smallLetter = (answer[answer.length - 1].charCodeAt(0) < 97 || answer[answer.length - 1].charCodeAt(0) > 122);
-    let capitalLetter = (answer[answer.length - 1].charCodeAt(0) < 65 || answer[answer.length - 1].charCodeAt(0) > 90); // 예외 처리
+    let num = (check(48,answer) || check2(57,answer));
+    let consonant = (check(12593,answer) || check2(12643,answer));
+    let smallLetter = (check(97,answer) || check2(122,answer));
+    let capitalLetter = (check(65,answer) || check2(90,answer)); // 예외 처리
     if (time > 0) {
         if (word[lastIndex] === answer[0] && answer.length > 1 && consonant && smallLetter && capitalLetter && num) {
             const name = document.getElementById('answer').value;
